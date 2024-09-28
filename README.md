@@ -2,7 +2,7 @@
 你懂的！！
 
 ## 演示地址
-http://192.99.11.204:5000/
+http://127.0.0.1:5000/
 
 
 
@@ -12,6 +12,8 @@ http://192.99.11.204:5000/
 pip install --no-cache-dir -r requirements.txt
 python app.py
 ```
+
+这需要注意小版本python3.6和python3.11，运行部分函数不兼容，如send_file的attachment_filename参数
 
 ## Docker
 ```

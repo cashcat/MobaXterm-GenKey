@@ -118,9 +118,8 @@ def get_lc():
 #@app.route('/download/<lc>')
 def download_lc(lc):
     if lc and len(lc) > 5 and os.path.exists('./' + lc):
-        return send_file(lc,
-            as_attachment=True,
-            attachment_filename='Custom.mxtpro') 
+        #return send_file(lc,as_attachment=True, attachment_filename='Custom.mxtpro') 
+        return send_file(lc,as_attachment=True,download_name='Custom.mxtpro') 
     else:
         return "请检查用户名版本号是否正确！"
 
